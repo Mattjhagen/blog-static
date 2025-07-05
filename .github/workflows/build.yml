@@ -1,0 +1,41 @@
+name: Build Blog Posts
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - 'posts_md/**.md'
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v3
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '18'
+
+      - name: Install dependencies
+        run: npm install marked
+
+      - name: Convert Markdown to HTML
+        run: |
+          for file in posts_md/*.md; do
+            if [ -f "$file" ]; then
+              filename=$(basename -- "$file")
+              slug="\${filename%.*}"
+              npx marked -i "$file" -o "posts/\${slug}.html"
+            fi
+          done
+
+      - name: Commit and push changes
+        uses: stefanzweifel/git-auto-commit-action@v4
+        with:
+          commit_message: "build: convert markdown to html"
+          branch: main
+          file_pattern: 'posts/**.html'

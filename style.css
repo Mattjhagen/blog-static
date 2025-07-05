@@ -42,6 +42,12 @@ main {
     text-align: center;
 }
 
+.header-logo {
+    width: 40px; /* Smaller logo */
+    height: 40px;
+    margin-right: 0.75rem;
+}
+
 .logo {
     width: 100px;
     height: 100px;

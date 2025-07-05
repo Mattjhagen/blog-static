@@ -20,7 +20,7 @@ Exactly one year later, on August 9th, 2024, I was released from a one-year sent
 
 I hit the pavement hard, putting in 20–30 job applications a week. A few interviews. No bites. It was discouraging. But I’ve always had an entrepreneurial spirit — and God didn’t bring me this far to leave me hanging.
 
-So I started my own company.
+So I started my own company!
 
 It began with a retail phone store. I landed partnerships with Dish Wireless, Apple, and a few others. But customers weren’t coming. I could’ve sat around and waited, but that’s not who I am.
 

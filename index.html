@@ -12,25 +12,43 @@
   </style>
 </head>
 <body class="flex flex-col min-h-screen">
+  <div class="stars"></div>
   <header class="flex items-center justify-between p-4 bg-gray-800 text-white">
     <div class="flex items-center">
-      <img src="assets/logo.png" alt="vibeCode Logo" class="h-10 w-10 mr-2">
+      <img src="assets/logo.png" alt="vibeCode Logo" class="header-logo">
       <span class="text-xl font-bold">vibeCode <span class="font-avita">Blog</span></span>
     </div>
   </header>
-  <main class="flex-grow container mx-auto px-4">
-    <h1 class="text-2xl font-bold mb-4"/h1>
-    <ul class="space-y-4">
-      <li><a href="posts/from-meth-to-jesus.html" class="text-blue-400 underline">from meth to jesus</a></li>
-    </ul>
+  <main class="flex-grow container mx-auto px-4 py-8">
+    <div class="flex flex-wrap -mx-4">
+      <!-- Sidebar for Older Posts -->
+      <aside class="w-full md:w-1/4 px-4">
+        <h2 class="text-xl font-bold mb-4 border-b pb-2">Older Posts</h2>
+        <ul class="space-y-2">
+          <li><a href="posts/from-meth-to-jesus.html" class="text-blue-400 hover:underline">from meth to jesus</a></li>
+        </ul>
+      </aside>
+
+      <!-- Main Content for Latest Post -->
+      <section class="w-full md:w-3/4 px-4">
+        
+      <article class="prose lg:prose-xl">
+        <h1 class="text-3xl font-bold mb-4">test</h1>
+        <p>test</p>
+
+      </article>
+    
+      </section>
+    </div>
   </main>
   <footer class="bg-gray-800 text-white p-4">
     <div class="social">
         <a href="https://www.linkedin.com/in/mattjhagen?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app" target="_blank" rel="noopener noreferrer"><img src="assets/linkedin.svg" alt="LinkedIn"></a>
-        <a href="https://github.com/Mattjhagen" target="_blank" rel="noopener noreferrer"><img src="assets/github.svg" alt="GitHub"></a>
+        <a href="https://github.com/Packie" target="_blank" rel="noopener noreferrer"><img src="assets/github.svg" alt="GitHub"></a>
         <a href="https://www.reddit.com/u/PackieAI/s/hBxmSvCt9R" target="_blank" rel="noopener noreferrer"><img src="assets/reddit.svg" alt="Reddit"></a>
         <a href="https://discord.gg/wpde4HSS" target="_blank" rel="noopener noreferrer"><img src="assets/discord.svg" alt="Discord"></a>
         <a href="https://coff.ee/vibecodes" target="_blank" rel="noopener noreferrer"><img src="assets/coffee.svg" alt="Buy Me a Coffee"></a>
+        <a href="https://github.com/Mattjhagen/vibeCodeSpace" target="_blank" rel="noopener noreferrer"><img src="assets/github.svg" alt="GitHub"></a>
     </div>
     <div class="links">
         <a href="public/terms-of-service.html">Terms of Service</a>

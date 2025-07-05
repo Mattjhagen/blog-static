@@ -1,6 +1,6 @@
 # VibeCode: The Dream-to-App Revolution Begins
 
-What if anyone — with nothing but a dream — could build an app?
+What if anyone, with nothing but a dream — could build an app?
 
 No dev team.  
 No code bootcamp.  

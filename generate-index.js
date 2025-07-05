@@ -28,7 +28,7 @@ async function buildIndex() {
       .map(file => {
         const slug = path.basename(file, '.md');
         const title = slug.replace(/-/g, ' ');
-        return `<li><a href="posts/${slug}.html" class="text-blue-400 hover:underline">${title}</a></li>`;
+        return `<li><a href="/posts/${slug}.html" class="text-blue-400 hover:underline">${title}</a></li>`;
       })
       .join('\n');
 

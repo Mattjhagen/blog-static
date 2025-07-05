@@ -1,4 +1,4 @@
-name: Build Blog Posts
+name: Build Blog
 
 on:
   push:
@@ -32,10 +32,13 @@ jobs:
               npx marked -i "$file" -o "posts/\${slug}.html"
             fi
           done
+      
+      - name: Generate index.html
+        run: node generate-index.js
 
       - name: Commit and push changes
         uses: stefanzweifel/git-auto-commit-action@v4
         with:
-          commit_message: "build: convert markdown to html"
+          commit_message: "build: update blog posts and index"
           branch: main
-          file_pattern: 'posts/**.html'
+          file_pattern: 'posts/**.html index.html'

@@ -40,6 +40,7 @@ async function buildIndex() {
 
     const latestPostFullHtml = `
       <article class="prose lg:prose-xl">
+        <a href="/" class="text-blue-400 hover:underline">&larr; Back to Home</a>
         <h1 class="text-3xl font-bold mb-4">${latestPostTitle}</h1>
         ${latestPostHtml}
       </article>

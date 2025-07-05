@@ -50,6 +50,21 @@ The final result is a sophisticated, zero-maintenance, and free-to-host blog.
 *   **Build & Deployment:** Handled entirely by a GitHub Action.
 *   **Hosting:** Provided by GitHub Pages.
 
+## Future Enhancements Discussed
+
+### Custom Domain (`blog.vibecodes.space`)
+
+We have configured the repository to support a custom domain by adding a `CNAME` file. The process involves two parts:
+1.  **GitHub:** A `CNAME` file containing `blog.vibecodes.space` was added to the repository.
+2.  **Domain Provider:** The user will need to add a `CNAME` record in their domain provider's DNS settings, pointing the `blog` subdomain to `mattjhagen.github.io`.
+
+### Interactive Chatbot
+
+The possibility of adding a third-party chatbot was discussed. The recommended approach is to:
+1.  Sign up for a service like Tidio or Crisp.
+2.  Customize the chatbot on their platform.
+3.  Embed a simple JavaScript snippet they provide into the `index.template.html` file before the closing `</body>` tag.
+
 ## Next Steps
 
 Tomorrow, we will explore options for adding a secure login system for administrative purposes, likely leveraging a client-side solution or a serverless function to keep the project aligned with its current architecture.

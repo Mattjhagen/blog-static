@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>ClickBaitBlocker</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap">
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+    }
+    code {
+      background-color: #f3f4f6;
+      padding: 0.2rem 0.4rem;
+      border-radius: 0.25rem;
+      font-family: monospace;
+    }
+  </style>
+</head>
+<body class="bg-gray-100 text-gray-900 p-8">
+  <main class="max-w-4xl mx-auto bg-white p-6 rounded-xl shadow-md">
+    <h1 class="text-3xl font-extrabold mb-4">ClickBaitBlocker</h1>
+    <p class="mb-6">A full-stack application designed to analyze content and identify potential clickbait. The project is built with a modern tech stack, featuring a React frontend and a Node.js/Express backend.</p>
+
+    <h2 class="text-2xl font-bold mb-2">✨ Features</h2>
+    <ul class="list-disc list-inside mb-6">
+      <li><strong>Content Analysis:</strong> Submit content or URLs for clickbait analysis.</li>
+      <li><strong>Results Display:</strong> View detailed analysis results.</li>
+      <li><strong>Responsive UI:</strong> A modern user interface built with React and Tailwind CSS.</li>
+    </ul>
+
+    <h2 class="text-2xl font-bold mb-2">🚀 Tech Stack</h2>
+
+    <h3 class="text-xl font-semibold mt-4 mb-1">Frontend:</h3>
+    <ul class="list-disc list-inside">
+      <li><a class="text-blue-600 underline" href="https://react.dev/">React</a></li>
+      <li><a class="text-blue-600 underline" href="https://vitejs.dev/">Vite</a></li>
+      <li><a class="text-blue-600 underline" href="https://www.typescriptlang.org/">TypeScript</a></li>
+      <li><a class="text-blue-600 underline" href="https://tailwindcss.com/">Tailwind CSS</a></li>
+      <li><a class="text-blue-600 underline" href="https://ui.shadcn.com/">Shadcn/ui</a></li>
+      <li><a class="text-blue-600 underline" href="https://tanstack.com/query/latest">React Query</a></li>
+    </ul>
+
+    <h3 class="text-xl font-semibold mt-4 mb-1">Backend:</h3>
+    <ul class="list-disc list-inside">
+      <li><a class="text-blue-600 underline" href="https://nodejs.org/">Node.js</a></li>
+      <li><a class="text-blue-600 underline" href="https://expressjs.com/">Express.js</a></li>
+      <li><a class="text-blue-600 underline" href="https://www.typescriptlang.org/">TypeScript</a></li>
+    </ul>
+
+    <h3 class="text-xl font-semibold mt-4 mb-1">Database:</h3>
+    <ul class="list-disc list-inside mb-6">
+      <li><a class="text-blue-600 underline" href="https://orm.drizzle.team/">Drizzle ORM</a></li>
+      <li><a class="text-blue-600 underline" href="https://neon.tech/">Neon</a></li>
+    </ul>
+
+    <h2 class="text-2xl font-bold mb-2">📦 Getting Started</h2>
+
+    <h3 class="text-xl font-semibold mt-2 mb-1">Prerequisites</h3>
+    <ul class="list-disc list-inside mb-4">
+      <li>Node.js (v20.x or later recommended)</li>
+      <li>npm or a compatible package manager</li>
+    </ul>
+
+    <h3 class="text-xl font-semibold mt-2 mb-1">Installation & Setup</h3>
+    <ol class="list-decimal list-inside mb-4">
+      <li><strong>Clone the repository:</strong>
+        <pre><code>git clone https://github.com/Mattjhagen/Clickbaitblocker.git
+cd Clickbaitblocker</code></pre>
+      </li>
+      <li><strong>Install dependencies:</strong>
+        <pre><code>npm install</code></pre>
+      </li>
+      <li><strong>Set up environment variables:</strong>  
+        Create a <code>.env</code> file in the root and add any necessary environment variables (e.g., database connection strings, API keys).
+      </li>
+      <li><strong>Run the development server:</strong>  
+        <pre><code>npm run dev</code></pre>
+      </li>
+    </ol>
+
+    <h3 class="text-xl font-semibold mt-4 mb-1">Other Scripts</h3>
+    <ul class="list-disc list-inside">
+      <li><strong>Build for production:</strong> <code>npm run build</code></li>
+      <li><strong>Start production server:</strong> <code>npm run start</code></li>
+      <li><strong>Type checking:</strong> <code>npm run check</code></li>
+    </ul>
+
+    <h2 class="text-2xl font-bold mt-6 mb-2">📁 Project Structure</h2>
+    <pre class="bg-gray-100 p-4 rounded-md overflow-auto text-sm"><code>.
+├── client/    # React frontend application
+├── server/    # Express.js backend API
+└── shared/    # Shared code/types between client and server
+</code></pre>
+  </main>
+</body>
+</html>

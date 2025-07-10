@@ -92,7 +92,7 @@
   <p><a href="https://github.com/Mattjhagen/swiftgenie" target="_blank">👉 github.com/YOUR_USERNAME/swiftgenie</a></p>
 
   <footer>
-    Made with faith and caffeine by Matty Hagen — <a href="mailto:matty@vibecode.space">matty@vibecode.space</a>
+    Made with faith and caffeine by Matty Hagen — <a href="mailto:matty@vibecodes.space">matty@vibecode.space</a>
   </footer>
 
 </body>
